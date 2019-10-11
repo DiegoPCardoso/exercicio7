@@ -10,7 +10,16 @@
  */
 public class testaEmpresa {
     public static void main(String[] args) {
-        AssistenteTecnico AT1= new AssistenteTecnico("Diego Cardoso","12345");
+        
+        Gerente g1=new Gerente("Diego","123","Tecnico");
+        
+        AssistenteTecnico AT1 = new AssistenteTecnico("Bruna","124",100,g1);
+        
+        Gerente g2=new Gerente("Tiago","125","Administrativo");
+        
+        AssistenteAdministrativo AM = new AssistenteAdministrativo("Carol","126",100,g2);
+        
+           
         
     }
     

@@ -12,16 +12,12 @@ public class AssistenteTecnico extends Funcionario{
     private double bonus;
     private Gerente supervisor;
 
-    public AssistenteTecnico(Gerente s, String n, String m) {
-        super(n, m);
-        this.supervisor = s;
-    }
-
-    public AssistenteTecnico(double b, String n, String m) {
+    public AssistenteTecnico( String n, String m, double b, Gerente s) {
         super(n, m);
         this.bonus = b;
+        this.supervisor = s;
     }
-
+    
     public double getBonus() {
         return bonus;
     }

@@ -10,11 +10,15 @@
  */
 public class AssistenteAdministrativo extends Funcionario {
     private double adicionalNoturno;
+    private Gerente supervisor;
 
-    public AssistenteAdministrativo(double an, String n, String m) {
+    public AssistenteAdministrativo( String n, String m, double an, Gerente s) {
         super(n, m);
         this.adicionalNoturno = an;
+        this.supervisor = s;
     }
+
+    
 
     public double getAdicionalNoturno() {
         return adicionalNoturno;
@@ -22,6 +26,14 @@ public class AssistenteAdministrativo extends Funcionario {
 
     public void setAdicionalNoturno(double an) {
         this.adicionalNoturno = an;
+    }
+
+    public Gerente getSupervisor() {
+        return supervisor;
+    }
+
+    public void setSupervisor(Gerente supervisor) {
+        this.supervisor = supervisor;
     }
     
 }
